@@ -1,0 +1,10 @@
+{{ section_list }}
+
+{% for section in section_list %}
+
+    {{ section.title }}
+    {{ section.content|safe }}
+
+{% endfor %}
+
+<a href="{% url 'admin:index' %}">Administration</a>
